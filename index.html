@@ -52,9 +52,15 @@ The robustness of neural network classifiers to small input perturbations has be
 
 Our tool-supported method for the verification of neural network classifiers subjected to contextually meaningful perturbations allows for: 
 <ul>
-<li> real-world phenomena to be encoded; </li>
-<li> evaluation of contextual robustness to compare model-level performance, and</li>
-<li> the generation of contextually meaningful counter examples. </li>
+
+	   <li> The formal encoding of contextually relevant image perturbations at quantified perturbation levels &epsilon; &isin; [0,1].</li>
+    <li> The verification of contextually relevant DNN robustness, to establish how the accuracy of a DNN degrades as the perturbation level &epsilon; increases.  DeepCert can perform this verification using either test-based (fast but approximate) or formal verification (slow but providing formal guarantees).</li> 
+    <li> The generation of contextually relevant counterexamples. These counterexamples provide engineers with visually meaningful information about the level of blur, haze, etc. at which DNN classifiers stop working correctly.</li>
+    <li> The selection of DNNs appropriate for the operational context: 
+    	<ul>
+    		<li>envisaged when a safety-critical system is designed, or </li>
+    	    <li> observed by the deployed system during operation.</li>
+    	 </ul>
 </ul>
 </p>
 <p>
@@ -62,14 +68,9 @@ We illustrate our method using two well known image classification problems in t
 </p>
 
 
-<p>
-Our method for the systematic verification of contextually relevant robustness in neural network classifiers. Our method  accepts a set of models, and a set of labelled data. During model evaluation each model is evaluated against each sample, and label to find a robustness measure for that sample. The results  are then presented to the engineer as visualisations which allow for model-level robustness evaluation and comparison.
-</p>
-<p>
-	Contextual Perturbations are encoded as either a function applied to the model or an input space mapping. This is then evaluated using either test-based or formal verification techniques.
-</p>
-
 <h2>Downloading the tool</h2>
+We implemented our method using a Python framework which we have made available on our  <a href = 'https://github.com/ContextualRobustness/contextual-robustness' target='_blank'>tool website</a>. The repository includes all models used in the paper, the code for the DeepCert tool with the encoded perturbations presented in the paper, the supporting scripts required to generate the performance visualisations and instructions on how to use the framework. In addition, a version of Marabou is provided with a Python interface in which the haze perturbation from the previous section is encoded.
+
    Our tool is available for download from our  <a href = 'https://github.com/ContextualRobustness/contextual-robustness' target='_blank'>repository</a>
 <h2>Contacting us</h2>
 <p>
