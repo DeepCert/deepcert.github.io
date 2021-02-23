@@ -1,0 +1,98 @@
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>DeepCert - Home</title>
+  <meta name="description" content="Systematic Verification of Contextually Relevant Robustness for Neural Network Image Classifiers">
+
+  <!--link rel="stylesheet" href="/css/home.css" type="text/css" media="screen, projection" /-->
+
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="canonical" href="/">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml" />
+
+
+</head>
+
+
+  <body>
+	<div id="wrapper">
+
+    <div id="header-bar">
+	<div id="header">
+		<div id="logo">
+			<a href="#"><img src="./images/structure/ePMC-Logo.png" width="160px"/></a>
+		</div>
+		<h1>Systematic Verification of Contextually Relevant Robustness for Neural Network Image Classifiers.</h1>
+		<div id='authors'>
+		Colin Paterson, Haoze Wu, John Grese, Radu Calinescu, Corina S. P&#259;s&#259;reanu and Clark Barrett.
+		</div>
+		</div>
+</div>
+
+ <!--   		<div id="menu-bar">
+		<a href="index.html">Home</a> | 
+		<a href="example.html">Code</a>   
+		</div>
+ -->
+
+    <div id="content">
+<br />
+<br />
+<br />
+<h1>About DeepCert</h1>
+
+<p><img src="images/Process.png" class="homepic"/>
+The robustness of neural network classifiers to small input perturbations has been the subject of intense research in recent years. Inferring the robustness of classifiers when subject to perturbations likely to be observed within the operational context is not, however, generally possible. Research to determine the robustness of classifiers to contextually meaningful perturbations, e.g. their performance when the input is an image affected by fog or changes in lighting, remains underexplored.  
+</p>
+<p>
+
+Our tool-supported method for the verification of neural network classifiers subjected to contextually meaningful perturbations allows for: 
+<ul>
+<li> real-world phenomena to be encoded; </li>
+<li> evaluation of contextual robustness to compare model-level performance, and</li>
+<li> the generation of contextually meaningful counter examples. </li>
+</ul>
+</p>
+<p>
+We illustrate our method using two well known image classification problems in the presence of three types of contextual perturbation. We demonstrate how models may be verified using test-based verification within the framework and how formal verification can be integrated for a subset of the problem space. Using the framework we show how model performance varies depending on the type of perturbation encountered and how the counter examples produced allow for iterative model improvement.
+</p>
+
+
+<p>
+Our method for the systematic verification of contextually relevant robustness in neural network classifiers. Our method  accepts a set of models, and a set of labelled data. During model evaluation each model is evaluated against each sample, and label to find a robustness measure for that sample. The results  are then presented to the engineer as visualisations which allow for model-level robustness evaluation and comparison.
+</p>
+<p>
+	Contextual Perturbations are encoded as either a function applied to the model or an input space mapping. This is then evaluated using either test-based or formal verification techniques.
+</p>
+
+<h2>Downloading the tool</h2>
+   Our tool is available for download from our  <a href = 'https://github.com/ContextualRobustness/contextual-robustness' target='_blank'>repository</a>
+<h2>Contacting us</h2>
+<p>
+If you wish to contact the authors then please use the following email addresses:
+<br />
+<br />
+Colin Paterson: <a href="mailto:colin.paterson@york.ac.uk?Subject=CRR" target="_top">colin.paterson@york.ac.uk</a>
+</p>
+Radu Calinescu: <a href="mailto:radu.calinescu@york.ac.uk?Subject=CRR" target="_top">radu.calinescu@york.ac.uk</a>
+<br />
+
+<br />
+<br />
+<br />
+</p>
+</div>
+
+    <p />
+    	<div id="footer">
+		<p>Copyright 2021</p> 
+	</div>
+
+	</div>
+  </body>
+
+</html>
